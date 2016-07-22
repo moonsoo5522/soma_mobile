@@ -122,7 +122,7 @@ public class MutiActivity extends AppCompatActivity implements AdapterView.OnIte
             case 1:
                 ProgressDialog pb = new ProgressDialog(MutiActivity.this);
                 pb.setTitle("기달");
-                pb.setMessage("상대방의 작업이 끝날 때까지 기다려 주세요.");
+                pb.setMessage("상대방이 수락할 때까지 기다려 주세요.");
                 pb.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                 pb.setCanceledOnTouchOutside(false);
                 return pb;

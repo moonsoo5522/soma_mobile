@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.facebook.login.LoginManager;
+import com.sangjin.soma7th.BackPressCloseHandler;
 import com.sangjin.soma7th.CreateRegID;
 import com.sangjin.soma7th.DateManage;
 import com.sangjin.soma7th.Music;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     String uid;
     public static Context context = null;
     DateManage man = null;
+    BackPressCloseHandler handler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
         btnFriend.setOnClickListener(mClickListener);
 
         pref.put("connect", man.getCurrentDate());
+        handler = new BackPressCloseHandler(this);
     }
 
     public void regIdRegister(String regId) {
@@ -182,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
+        handler.onBackPressed();
     }
 
     @Override
