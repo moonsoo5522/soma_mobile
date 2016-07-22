@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    tools:context="com.sangjin.soma7th.activity.MutiActivity">
+    
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:textSize="15sp"
+        android:text="아이디를 클릭하시면 자동으로 게임이 매칭됩니다.\n상대방이 메시지를 받으면 자동으로 화면이 전환됩니다."/>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

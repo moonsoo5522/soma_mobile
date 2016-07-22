@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:gravity="center">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="로그인"
+                android:paddingBottom="15dp"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:paddingBottom="5dp">
+
+            <EditText
+                android:id="@+id/l_email"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/bg_edittext"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:hint="ID" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/l_passwd"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/bg_edittext"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:hint="4글자 이상 비밀번호"
+                android:password="true" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="로그인" />
+
+            <Button
+                android:id="@+id/btn_gojoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="회원가입" />
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:paddingTop="20dp">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp" />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

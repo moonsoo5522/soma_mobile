@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_main"
+    android:gravity="center">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:text="회원가입"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:paddingBottom="5dp">
+
+            <EditText
+                android:id="@+id/e_email"
+                android:background="@drawable/bg_edittext"
+                android:hint="ID 입력"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+
+        <TableRow
+            android:gravity="center"
+            android:paddingBottom="5dp">
+
+            <EditText
+                android:id="@+id/e_passwd1"
+                android:background="@drawable/bg_edittext"
+                android:hint="4글자 이상 비밀번호"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:password="true"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:paddingBottom="5dp">
+
+            <EditText
+                android:id="@+id/e_passwd2"
+                android:background="@drawable/bg_edittext"
+                android:hint="비밀번호 재입력"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:password="true"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:paddingBottom="5dp">
+
+            <EditText
+                android:id="@+id/e_name"
+                android:background="@drawable/bg_edittext"
+                android:hint="이름 입력"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/gray"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="가입" />
+
+            <Button
+                android:id="@+id/btn_join_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/gray"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="취소" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
