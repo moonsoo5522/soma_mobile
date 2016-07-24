@@ -23,7 +23,7 @@ GCM푸시를 이용해 대전게임, 선물이나 친구추가시 푸시알림 �
 
 설치 시간, 게임 시작 시간, 종료 시간, 마지막 플레이 시간 등은 ShardPreference를 통해 로컬에서 관리.
 
-이외 회원 데이터, 친구 관계 데이터 등은 서버에서 관리. MySQL DBMS를 통해서 SQL문으로 쿼리 전송.
+이외 회원 데이터, 친구 관계 데이터 등은 서버에서 관리. MySQL DBMS를 사용, JDBC를 통해 SQL문으로 쿼리 전송.
 
 CMS의 주소는 http://52.40.227.27:8080/soma7th/management.jsp
 
@@ -36,18 +36,28 @@ aws ec2 클라우드에 서버를 구축함.
 1. Member 테이블
 
 id(varchar, PK)
+
+
 passwoard(varchar)
+
 name(varchar)
+
 point(int)
+
 dol(int)
+
 mode(int)
+
 win(int)
+
 lose(int)
+
 regid(varchar)
 
 
 2. friends 테이블
 
 id(varchar, PK FK)
+
 friend(varchar, PK FK)
 
