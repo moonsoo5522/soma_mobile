@@ -5,6 +5,8 @@ soma7th - 클라이언트(안드로이드)
 
 soma7thserver - 서버(Servlet, MySQL)
 
+구글 플레이 주소 : https://play.google.com/store/apps/details?id=com.sangjin.soma7th
+
 
 1인, 2인 대전 오목 게임.
 
