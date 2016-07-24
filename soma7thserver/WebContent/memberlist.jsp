@@ -1,25 +1,26 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
+<a href="http://52.40.227.27:8080/soma7th/management.jsp">home</a>
 
-<center><h2>È¸¿ø ¸ñ·ÏÀÔ´Ï´Ù.</h2></center>
+<center><h2>íšŒì› ëª©ë¡ìž…ë‹ˆë‹¤.</h2></center>
 <hr>
 
 	<table align="center" cellspacing="10">
 	<tr>
-		<td bgcolor="#BDBDBD">¾ÆÀÌµð</td>
-		<td bgcolor="#BDBDBD">ÆÐ½º¿öµå</td>
-		<td bgcolor="#BDBDBD">ÀÌ¸§</td>
-		<td bgcolor="#BDBDBD">½Â</td>
-		<td bgcolor="#BDBDBD">ÆÐ</td>
-		<td bgcolor="#BDBDBD">Æ÷ÀÎÆ®</td>
+		<td bgcolor="#BDBDBD">ì•„ì´ë””</td>
+		<td bgcolor="#BDBDBD">íŒ¨ìŠ¤ì›Œë“œ</td>
+		<td bgcolor="#BDBDBD">ì´ë¦„</td>
+		<td bgcolor="#BDBDBD">ìŠ¹</td>
+		<td bgcolor="#BDBDBD">íŒ¨</td>
+		<td bgcolor="#BDBDBD">í¬ì¸íŠ¸</td>
 	</tr>
 	<c:forEach var="i" items="${member}">
 	<tr>
@@ -29,10 +30,9 @@
 		<td>${i.win}</td>
 		<td>${i.lose}</td>
 		<td>${i.point}</td>
-		<td><a href="/soma7th/ManageServlet?header=ban&id=${i.id}">»èÁ¦</a></td>
+		<td><a href="/soma7th/ManageServlet?header=ban&id=${i.id}">ì‚­ì œ</a></td>
 	</tr>
 	</c:forEach>
 	</table><br><br><br>
-
 </body>
 </html>

@@ -102,7 +102,9 @@ public class MultiServlet extends HttpServlet {
 		mem.setId(targetId);
 		MemberDAO dao = new MemberDAO(mem);
 		send.sendOneClient(dao.getRegId());
+		dao.close();
 	}
+	
 	protected void gamePlay(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id = request.getParameter("id");
 		
@@ -112,8 +114,11 @@ public class MultiServlet extends HttpServlet {
 		
 		SendMessage send = new SendMessage();
 		send.addHeader("gamePlay");
+		System.out.println(id);
 		send.sendOneClient(dao.getRegId());
+		dao.close();
 	}
+	
 	protected void entireMembers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		MemberDAO dao = new MemberDAO();
@@ -122,6 +127,7 @@ public class MultiServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		String packet = new Gson().toJson(list);
 		out.write(packet);
+		System.out.println(packet);
 		out.flush();
 	}
 }

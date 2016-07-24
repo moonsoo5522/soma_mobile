@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<a href="http://52.40.227.27:8080/soma7th/management.jsp">home</a>
 
 <center><h2>포인트 목록입니다.</h2></center>
 <hr>
@@ -25,7 +26,8 @@
 	</c:forEach>
 	</table><br><br><br>
 	
-	<form ACTION="ManageServlet" METHOD="get">
+	<center>
+		<form ACTION="ManageServlet" METHOD="get">
 			<input type="hidden" name="header" value="pointset" >
 			<br>
             <select name="id" id="id">
@@ -37,6 +39,7 @@
             <br>
             <input TYPE="SUBMIT" value="수정하기">
     </form>
+    </center>
 
 </body>
 </html>

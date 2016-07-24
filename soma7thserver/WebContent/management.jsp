@@ -1,22 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
 <p align="right">
 </p>
 	<center>
-	<h2>°όΈ®ΐΪ ΖδΐΜΑφΐΤ΄Ο΄Ω.</h2>
+	<h2>κ΄€λ¦¬μ νμ΄μ§€μ…λ‹λ‹¤.</h2>
 	<hr>
-	<a href="/soma7th/ManageServlet?header=banlist">ΘΈΏψ Ε»Επ</a>
+	<a href="/soma7th/ManageServlet?header=banlist">νμ› νƒν‡΄</a>
 	<br><br>
-	<a href="/soma7th/ManageServlet?header=pointlist">ΖχΐΞΖ® °όΈ®</a>
+	<a href="/soma7th/ManageServlet?header=pointlist">ν¬μΈνΈ κ΄€λ¦¬</a>
 	<br><br>
-	<a href="/soma7th/ManageServlet?header=dollist">ΏΐΈρΎΛ °όΈ®</a>
+	<a href="/soma7th/ManageServlet?header=dollist">μ¤λª©μ• κ΄€λ¦¬</a>
 	<br><br>
 	</center>
 </body>

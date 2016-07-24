@@ -32,10 +32,10 @@ public class ManageServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.setContentType("text/html; charset=EUC-KR");
-		response.getWriter().append("Served at: ㅎㅎ").append(request.getContextPath());
+		response.setContentType("text/html; charset=UTF-8");
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		request.setCharacterEncoding("EUC-KR");
+		request.setCharacterEncoding("UTF-8");
 		
 		String param = request.getParameter("header");
 		System.out.println(param);

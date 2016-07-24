@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<a href="http://52.40.227.27:8080/soma7th/management.jsp">home</a>
 
 <center><h2>오목알 목록입니다.</h2></center>
 <hr>
@@ -24,7 +25,8 @@
 	</c:forEach>
 	</table><br><br><br>
 	
-	추가할 오목알 번호와 유저 아이디를 선택하세요.
+	<center>
+		추가할 오목알 번호와 유저 아이디를 선택하세요.
 	<form ACTION="ManageServlet" METHOD="get">
 			<input type="hidden" name="header" value="dolset" >
 			<br>
@@ -41,6 +43,7 @@
             <br>
             <input TYPE="SUBMIT" value="수정하기">
     </form>
+    </center>
 
 </body>
 </html>
