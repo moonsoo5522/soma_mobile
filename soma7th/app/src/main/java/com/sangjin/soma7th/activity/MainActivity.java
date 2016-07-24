@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -59,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
         if(a == null || a.equals("")) {
             reg.registerInBackground();
         }
-        Log.d("니미야 넌 왜 안되니", a);
 
         String mode = pref.getValue("mode", null);
         if(mode.equals("facebook")) {
