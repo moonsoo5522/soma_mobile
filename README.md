@@ -30,3 +30,4 @@ CMS의 주소는 http://52.40.227.27:8080/soma7th/management.jsp
 
 aws ec2 클라우드에 서버를 구축함.
 
+

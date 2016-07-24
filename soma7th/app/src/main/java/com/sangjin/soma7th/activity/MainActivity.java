@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         if(a == null || a.equals("")) {
             reg.registerInBackground();
         }
+        Log.d("니미야 넌 왜 안되니", a);
 
         String mode = pref.getValue("mode", null);
         if(mode.equals("facebook")) {
@@ -73,18 +75,7 @@ public class MainActivity extends AppCompatActivity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        } else if(mode.equals("normal")) {
-            SendPost send = new SendPost();
-            try {
-                send.addHeader("regid");
-                send.addThePkt("id", id);
-                send.addThePkt("regid", a);
-                send.execute();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }
-
         btnSingle = (Button) findViewById(R.id.btn1);
         btnMulti = (Button) findViewById(R.id.btn_multi);
         btnRanking = (Button) findViewById(R.id.btn2);
@@ -104,14 +95,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void regIdRegister(String regId) {
-        SendPost send = new SendPost();
-        try {
-            send.addHeader("regid");
-            send.addThePkt("id", id);
-            send.addThePkt("regid", regId);
-            send.execute();
-        } catch (Exception e) {
-            e.printStackTrace();
+        if(regId != null && !regId.equals("")) {
+
+            SendPost send = new SendPost();
+            try {
+                send.addHeader("regid");
+                send.addThePkt("id", id);
+                send.addThePkt("regid", regId);
+                send.execute();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
