@@ -31,7 +31,7 @@ CMS의 주소는 http://52.40.227.27:8080/soma7th/management.jsp
 aws ec2 클라우드에 서버를 구축함.
 
 
-백엔드는 MySQL을 사용하였으며, 테이블은 총 2개임.
+DBMS는 MySQL을 사용하였으며, 테이블은 총 2개임.
 
 1. Member 테이블
 
@@ -57,7 +57,7 @@ regid(varchar)
 
 2. friends 테이블
 
-id(varchar, PK FK)
+id(varchar, PK, FK - from Member id)
 
-friend(varchar, PK FK)
+friendid(varchar, PK, FK - from Member id)
 
